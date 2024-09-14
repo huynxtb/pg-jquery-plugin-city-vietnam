@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>ProG Coder</title>
+    <meta name="description" content="ProG Coder" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="libs/select2/select2.css" />
+    <script src="libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="libs/select2/select2.full.min.js"></script>
+  </head>
+
+  <body>
+    <h1 style="text-align: center; margin-top: 50px">
+      Code Plugin JQuery, HTML chọn Tỉnh/Thành Phố, Quận/Huyện, Xã Phường Việt Nam 2023 |
+      <a target="_blank" href="https://www.progcoder.com/">ProG Coder</a>
+    </h1>
+
+    <section style="margin-top: 50px">
+      <div class="contianer">
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <form>
+              <div class="form-group">
+                <label for="Province">Tỉnh/Thành Phố</label>
+                <select id="Province" class="form-control"></select>
+              </div>
+              <div class="form-group">
+                <label for="District">Quận/Huyện</label>
+                <select id="District" class="form-control"></select>
+              </div>
+              <div class="form-group">
+                <label for="Ward">Xã/Phường</label>
+                <select id="Ward" class="form-control"></select>
+              </div>
+              <button class="btn btn-success" id="BtnGetDataSelected" type="button">
+                Get Data Được Chọn
+              </button>
+
+              <ul style="margin-top: 50px;" id="DataText"></ul>
+              <ul style="margin-top: 50px;" id="DataId"></ul>
+
+            </form>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
